@@ -1,0 +1,66 @@
+html{
+  background-color: lightcoral;
+  display: flex;
+  justify-content: center;    
+}
+.baner{
+  margin-top: 25%;
+  border-radius: 10px;    
+  width: 160px;
+  max-width: 160px;
+  height: 600px;
+  max-height: 600px;
+  background-image: url(img/Mango.jpg);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: repeat;   
+  color: lightpink;
+  font-size: 25pt;
+  overflow: hidden;
+}
+.baner_text{
+  margin-left: 5px;    
+}
+.button{
+    background-color: lightgoldenrodyellow;
+    color: pink;
+    float: left;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    font-size: 15px;
+}
+@keyframes fon {
+  from{
+    background-size: 200% 200%;
+  }
+  to{
+    background-size: 120% 120%;
+  }
+}
+.baner{
+  animation-name: fon;
+  animation-duration: 10s;
+  animation-iteration-count: 500;
+  animation-fill-mode: forwards;
+}
+@keyframes text {
+  from{
+    font-size: 0pt;
+  }
+  70%{
+    font-size: 30pt;
+  }
+  to{
+    font-size: 22pt;
+  }
+  
+}
+.baner_text{
+  animation-name: text;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}

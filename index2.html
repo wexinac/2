@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пушистики"</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href=
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+</head>
+<body>
+    <div class="left">
+        <div class="geeks">
+            <a href="index2.html" class="">О нас</a>
+            <div id="menus">
+                <a href="index1.html">На главную</a>
+            </div>
+            <!-- Bar icon for navigation -->
+            <a href="javascript:void(0);" class="icon" 
+                    onclick="geeksforgeeks()">
+                <i onclick="myFunction(this)" 
+                    class="fa fa-plus-circle">
+                </i>
+            </a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="image">
+        <a href="img/Bech.webp">
+			<img alt="О нас" src="img/Bech.webp"/>
+        </a>
+        </div>
+        <h1>
+            Добро пожаловать в нашу пушистую семью!!!
+        </h1>
+        <div class="font">
+            <h2>
+                Именно тут вы можете выбрать себе пушистика по душе.
+            </h2>
+        </div>
+        <div> 
+            <button id="toggle">Подробнее</button> 
+            <div id="elem1"> 
+                <p>
+                    Мы очень любим животных, особенно шпицев. Поскольку данная порода сама по себе очень милая и ласковая.
+                </p>
+                <p>
+                    Если вы обратитесь к нам, мы обязательно поможем вам с выбором и проконсультируем.
+                </p>
+            </div> 
+        </div>
+    </div>
+    <script> 
+        $('#toggle').click(function() { 
+            $('#elem1').slideToggle(1000); 
+        }); 
+   </script>
+    <script>
+        
+        // Function to toggle the bar
+        function geeksforgeeks() {
+            var x = document.getElementById("menus");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+  
+    <script>
+        
+        // Function to toggle the plus menu into minus
+        function myFunction(x) {
+            x.classList.toggle("fa-minus-circle");
+        }
+    </script>
+    <footer>
+        <div class=point1>
+            <h3>Наши контакты</h3>
+            <ul>
+                <li>Адрес: 156002, Кострома, ул.Советская 120</li>
+                <li>Телефон: 35-81-86</li>
+                <li>Время работы: с 10:00 до 18:00</li>
+            </ul>
+        </div>
+        <div class=point2>
+             <a href="https://vk.com/"><img src="img/VK.png" alt="VK"></a>
+             <a href="https://ok.ru/"><img src="img/OK.png" alt="OK"></a>
+             <a href="https://web.telegram.org/"><img src="img/Telegram.png" alt="Telegram"></a>
+        </div>    
+    </footer>
+</body>
+</html>
